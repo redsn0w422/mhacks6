@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UITextField!
     var products = [Products]()
 
@@ -40,6 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        queryData("iphone")
         // Do any additional setup after loading the view, typically from a nib.
 //        queryData("ipod")
         
@@ -60,7 +62,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         println(search)
         
-//        products = [Products]()
+        products = [Products]()
         
         let searchURL = NSURL(string: "http://api.walmartlabs.com/v1/search?apiKey=fjhq9hxy48h97smfcrbear8u&format=json&query=" + search)
         println(searchURL)
@@ -80,6 +82,7 @@ class ViewController: UIViewController, UITableViewDataSource {
                 }
             }
         }
+        tableView.reloadData()
     }
     
 //    func textFieldShouldReturn(searchBar: UITextField!) -> Bool {

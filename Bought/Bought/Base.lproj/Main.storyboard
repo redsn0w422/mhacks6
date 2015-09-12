@@ -61,6 +61,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="Po2-cs-8qB" id="fTM-De-UNJ"/>
+                        <outlet property="tableView" destination="bie-Za-CpU" id="RBy-A8-hPI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
