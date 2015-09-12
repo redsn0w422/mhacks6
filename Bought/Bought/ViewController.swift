@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UITextField!
+
     var products = [Products]()
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -98,7 +99,6 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
-        println("clicked")
         self.performSegueWithIdentifier("showWebView", sender: products[indexPath.row].html_url)
     }
     
