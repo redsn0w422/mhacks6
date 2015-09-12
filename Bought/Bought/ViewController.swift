@@ -41,20 +41,29 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        queryData("ipod")
+//        queryData("ipod")
         
-        searchBar.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
+//        searchBar.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
     }
     
-    func textFieldDidChange(textField: UITextField) {
-        queryData(textField.text)
+//    func textFieldDidChange(textField: UITextField) {
+//        queryData(textField.text)
+//    }
+    
+    @IBAction func Search(sender: AnyObject)
+    {
+        queryData(searchBar.text)
+//        println(searchBar.text)
     }
     
     func queryData(search: String) {
         
-        products = [Products]()
+        println(search)
         
-        var searchURL = NSURL(string: "http://api.walmartlabs.com/v1/search?apiKey=fjhq9hxy48h97smfcrbear8u&format=json&query=" + search)
+//        products = [Products]()
+        
+        let searchURL = NSURL(string: "http://api.walmartlabs.com/v1/search?apiKey=fjhq9hxy48h97smfcrbear8u&format=json&query=" + search)
+        println(searchURL)
         let reposURL = NSURL(string: "http://api.walmartlabs.com/v1/paginated/items?category=3944&apiKey=fjhq9hxy48h97smfcrbear8u&format=json")
         
         if let JSONData = NSData(contentsOfURL: searchURL!)
@@ -66,6 +75,7 @@ class ViewController: UIViewController, UITableViewDataSource {
                     for item in prodArray
                     {
                         products.append(Products(json: item))
+                        println(products)
                     }
                 }
             }
