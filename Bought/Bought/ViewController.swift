@@ -90,11 +90,16 @@ class ViewController: UIViewController, UITableViewDataSource {
 //        println("test")
 //        return true
 //    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let theDestination = (segue.destinationViewController as! WebViewController)
+        theDestination.url = sender as? String
+    }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         println("clicked")
-        self.performSegueWithIdentifier("showWebView", sender: self)
+        self.performSegueWithIdentifier("showWebView", sender: products[indexPath.row].html_url)
     }
     
     override func didReceiveMemoryWarning() {

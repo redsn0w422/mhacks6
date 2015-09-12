@@ -36,7 +36,7 @@ class WebViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        httpGet("http://www.google.com") {
+        httpGet(self.url!) {
             (data: String, error: String?) -> Void in
             if error != nil {
                 print(error)
