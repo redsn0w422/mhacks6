@@ -26,34 +26,6 @@
 			remoteGlobalIDString = 841F3E4E1BA3DD20008092C0;
 			remoteInfo = Bought;
 		};
-		EBFAB7701BA4238700DA7B86 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBFAB7691BA4238700DA7B86 /* Just.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 948CA81D1AF3FF43001E0FD3;
-			remoteInfo = "Just-iOS";
-		};
-		EBFAB7721BA4238700DA7B86 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBFAB7691BA4238700DA7B86 /* Just.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 948CA8271AF3FF43001E0FD3;
-			remoteInfo = "Just-iOSTests";
-		};
-		EBFAB7741BA4238700DA7B86 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBFAB7691BA4238700DA7B86 /* Just.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 948CA83B1AF3FF55001E0FD3;
-			remoteInfo = "Just-OSX";
-		};
-		EBFAB7761BA4238700DA7B86 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBFAB7691BA4238700DA7B86 /* Just.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 948CA8451AF3FF55001E0FD3;
-			remoteInfo = "Just-OSXTests";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +42,6 @@
 		841F3E741BA3EE72008092C0 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		841F3E761BA3F1FC008092C0 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		EBFAB7671BA41CC600DA7B86 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		EBFAB7691BA4238700DA7B86 /* Just.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Just.xcodeproj; path = "../../../../Downloads/Just-swift-2.0/Just.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +68,6 @@
 				841F3E511BA3DD20008092C0 /* Bought */,
 				841F3E671BA3DD20008092C0 /* BoughtTests */,
 				841F3E501BA3DD20008092C0 /* Products */,
-				EBFAB7691BA4238700DA7B86 /* Just.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,17 +119,6 @@
 				841F3E691BA3DD20008092C0 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EBFAB76A1BA4238700DA7B86 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EBFAB7711BA4238700DA7B86 /* Just.framework */,
-				EBFAB7731BA4238700DA7B86 /* Just-iOSTests.xctest */,
-				EBFAB7751BA4238700DA7B86 /* Just.framework */,
-				EBFAB7771BA4238700DA7B86 /* Just-OSXTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,12 +188,6 @@
 			mainGroup = 841F3E461BA3DD20008092C0;
 			productRefGroup = 841F3E501BA3DD20008092C0 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EBFAB76A1BA4238700DA7B86 /* Products */;
-					ProjectRef = EBFAB7691BA4238700DA7B86 /* Just.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				841F3E4E1BA3DD20008092C0 /* Bought */,
@@ -242,37 +195,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		EBFAB7711BA4238700DA7B86 /* Just.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Just.framework;
-			remoteRef = EBFAB7701BA4238700DA7B86 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBFAB7731BA4238700DA7B86 /* Just-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Just-iOSTests.xctest";
-			remoteRef = EBFAB7721BA4238700DA7B86 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBFAB7751BA4238700DA7B86 /* Just.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Just.framework;
-			remoteRef = EBFAB7741BA4238700DA7B86 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBFAB7771BA4238700DA7B86 /* Just-OSXTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Just-OSXTests.xctest";
-			remoteRef = EBFAB7761BA4238700DA7B86 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		841F3E4D1BA3DD20008092C0 /* Resources */ = {
