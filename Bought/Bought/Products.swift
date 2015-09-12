@@ -18,7 +18,7 @@ class Products
     init(json: NSDictionary)
     {
         self.name = json["name"] as? String
-        self.description = json["description"] as? String
-        self.html_url = json["html_url"] as? String
+        self.description = json["salePrice"] as? String
+        self.html_url = json["productUrl"] as? String
     }
 }
