@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9BE058AA-7D4D-48D0-948E-9DACFCECFE87</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Bought</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>54EF0CF4E96F5F8FED1CFA449B3F3DF8367C9E22</key>
 		<string>github.com:redsn0w422/mhacks6.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Bought/Bought.xcodeproj/project.xcworkspace</string>
+	<string>Bought/Bought.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>54EF0CF4E96F5F8FED1CFA449B3F3DF8367C9E22</key>
