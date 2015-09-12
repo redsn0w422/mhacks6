@@ -55,6 +55,10 @@ class ViewController: UIViewController, UITableViewDataSource {
 //        println(searchBar.text)
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("hi")
+    }
+    
     func queryData(search: String) {
         
        
@@ -64,6 +68,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 //        webView.loadHTMLString(myHTMLString, baseURL: nil)
         
         println(search)
+        
         self.performSegueWithIdentifier("showWebView", sender: self)
         
         products = [Products]()
