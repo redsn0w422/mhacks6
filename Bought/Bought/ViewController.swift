@@ -41,10 +41,23 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var searchURL = NSURL(string: "http://api.walmartlabs.com/v1/search?apiKey=fjhq9hxy48h97smfcrbear8u&query=ipod")
+        queryData("ipod")
+        
+        searchBar.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
+    }
+    
+    func textFieldDidChange(textField: UITextField) {
+        queryData(textField.text)
+    }
+    
+    func queryData(search: String) {
+        
+        products = [Products]()
+        
+        var searchURL = NSURL(string: "http://api.walmartlabs.com/v1/search?apiKey=fjhq9hxy48h97smfcrbear8u&format=json&query=" + search)
         let reposURL = NSURL(string: "http://api.walmartlabs.com/v1/paginated/items?category=3944&apiKey=fjhq9hxy48h97smfcrbear8u&format=json")
         
-        if let JSONData = NSData(contentsOfURL: reposURL!)
+        if let JSONData = NSData(contentsOfURL: searchURL!)
         {
             if let json = NSJSONSerialization.JSONObjectWithData(JSONData, options: nil, error: nil) as? NSDictionary
             {
@@ -58,6 +71,12 @@ class ViewController: UIViewController, UITableViewDataSource {
             }
         }
     }
+    
+//    func textFieldShouldReturn(searchBar: UITextField!) -> Bool {
+//        searchBar.resignFirstResponder()
+//        println("test")
+//        return true
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
