@@ -22,6 +22,18 @@ class ViewController: UIViewController, UITableViewDataSource {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = products[indexPath.row].name
         cell.detailTextLabel?.text = products[indexPath.row].description
+        
+        if let url = NSURL(string: products[indexPath.row].img_url!)
+        {
+            if let data = NSData(contentsOfURL: url)
+            {
+//                imageURL.contentMode = UIViewContentMode.ScaleAspectFit
+                
+                cell.imageView!.image = UIImage(data: data)
+            }
+        }
+        
+        
         return cell
     }
     

@@ -13,6 +13,7 @@ class Products
 {
     var name: String?
     var description: String?
+    var img_url: String?
     var html_url: String?
     
     init(json: NSDictionary)
@@ -20,5 +21,6 @@ class Products
         self.name = json["name"] as? String
         self.description = json["salePrice"] as? String
         self.html_url = json["productUrl"] as? String
+        self.img_url = json["thumbnailImage"] as? String
     }
 }
