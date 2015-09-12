@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        queryData("ipod")
+        queryData("tv")
     }
     
     
