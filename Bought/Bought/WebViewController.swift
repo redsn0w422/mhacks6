@@ -6,7 +6,6 @@ class WebViewController: UIViewController {
     var myRootRef = Firebase(url:"https://bought.firebaseio.com")
     var url:String?
     var product : [AnyObject] = []
-//    var product : [NSMutableDictionary] = []
     // Define UI elements
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var dollarAmountField: UITextField!
@@ -14,6 +13,10 @@ class WebViewController: UIViewController {
     @IBAction func addProductButton(sender: AnyObject) {
         product.append(dollarAmountField.text)
         myRootRef.childByAppendingPath("/products").setValue(product)
+        var alert = UIAlertController(title: "Success!", message: "Product successfully added to watchlist", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+//        performSegueWithIdentifier("", sender: <#AnyObject?#>)
     }
     
     override func viewDidAppear(animated: Bool) {
