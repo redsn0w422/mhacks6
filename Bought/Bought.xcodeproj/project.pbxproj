@@ -16,6 +16,11 @@
 		841F3E751BA3EE72008092C0 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F3E741BA3EE72008092C0 /* Repository.swift */; };
 		841F3E771BA3F1FC008092C0 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F3E761BA3F1FC008092C0 /* Products.swift */; };
 		EBDE92E91BA4A85D00E577A2 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE92E81BA4A85D00E577A2 /* Firebase.framework */; };
+		EBDE92EB1BA4AAC900E577A2 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE92EA1BA4AAC900E577A2 /* libicucore.dylib */; };
+		EBDE92ED1BA4AACF00E577A2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE92EC1BA4AACF00E577A2 /* libc++.dylib */; };
+		EBDE92EF1BA4AAD500E577A2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE92EE1BA4AAD500E577A2 /* CFNetwork.framework */; };
+		EBDE92F11BA4AADA00E577A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE92F01BA4AADA00E577A2 /* Security.framework */; };
+		EBDE92F31BA4AAE200E577A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE92F21BA4AAE200E577A2 /* SystemConfiguration.framework */; };
 		EBFAB7681BA41CC600DA7B86 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAB7671BA41CC600DA7B86 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,11 @@
 		841F3E741BA3EE72008092C0 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		841F3E761BA3F1FC008092C0 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		EBDE92E81BA4A85D00E577A2 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		EBDE92EA1BA4AAC900E577A2 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		EBDE92EC1BA4AACF00E577A2 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		EBDE92EE1BA4AAD500E577A2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EBDE92F01BA4AADA00E577A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EBDE92F21BA4AAE200E577A2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EBFAB7671BA41CC600DA7B86 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBDE92F31BA4AAE200E577A2 /* SystemConfiguration.framework in Frameworks */,
+				EBDE92F11BA4AADA00E577A2 /* Security.framework in Frameworks */,
+				EBDE92EF1BA4AAD500E577A2 /* CFNetwork.framework in Frameworks */,
+				EBDE92ED1BA4AACF00E577A2 /* libc++.dylib in Frameworks */,
+				EBDE92EB1BA4AAC900E577A2 /* libicucore.dylib in Frameworks */,
 				EBDE92E91BA4A85D00E577A2 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +83,11 @@
 		841F3E461BA3DD20008092C0 = {
 			isa = PBXGroup;
 			children = (
+				EBDE92F21BA4AAE200E577A2 /* SystemConfiguration.framework */,
+				EBDE92F01BA4AADA00E577A2 /* Security.framework */,
+				EBDE92EE1BA4AAD500E577A2 /* CFNetwork.framework */,
+				EBDE92EC1BA4AACF00E577A2 /* libc++.dylib */,
+				EBDE92EA1BA4AAC900E577A2 /* libicucore.dylib */,
 				EBDE92E81BA4A85D00E577A2 /* Firebase.framework */,
 				841F3E511BA3DD20008092C0 /* Bought */,
 				841F3E671BA3DD20008092C0 /* BoughtTests */,

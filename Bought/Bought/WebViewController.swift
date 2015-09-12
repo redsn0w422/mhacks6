@@ -11,11 +11,16 @@ import UIKit
 import Firebase
 
 class WebViewController: UIViewController {
-    @IBOutlet weak var webView: UIWebView!
-    
+    var myRootRef = Firebase(url:"https://bought.firebaseio.com")
     var url:String?
+
+    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var dollarAmountField: UITextField!
+    @IBAction func addProductButton(sender: AnyObject) {
+        
+    }
     
     override func viewDidAppear(animated: Bool) {
-        self.webView?.loadRequest(NSURLRequest(URL: NSURL(string: self.url!)!))        
+        self.webView?.loadRequest(NSURLRequest(URL: NSURL(string: self.url!)!))
     }
 }
