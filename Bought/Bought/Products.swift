@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Repository
+class Products
 {
     var name: String?
     var description: String?
