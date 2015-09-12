@@ -12,6 +12,8 @@ import UIKit
 class WebViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     
+    var url:String?
+    
     func HTTPsendRequest(request: NSMutableURLRequest,callback: (String, String?) -> Void) {
         
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request,completionHandler :

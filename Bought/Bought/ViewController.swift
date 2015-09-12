@@ -39,27 +39,22 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-    func viewDidAppear() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        searchBar.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
+        queryData("ipod")
     }
     
-//    func textFieldDidChange(textField: UITextField) {
-//        queryData(textField.text)
-//    }
     
     @IBAction func Search(sender: AnyObject)
     {
         queryData(searchBar.text)
-//        println(searchBar.text)
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("hi")
-    }
     
-    func queryData(search: String) {
+
+    
+    func queryData(search: String)
+    {
         
        
 //        self.performSegueWithIdentifier("showWebView", sender: self)
@@ -67,14 +62,11 @@ class ViewController: UIViewController, UITableViewDataSource {
 //        let myHTMLString:String! = "<h1>Hello Pizza!</h1>"
 //        webView.loadHTMLString(myHTMLString, baseURL: nil)
         
-        println(search)
-        
-        self.performSegueWithIdentifier("showWebView", sender: self)
         
         products = [Products]()
         
         let searchURL = NSURL(string: "http://api.walmartlabs.com/v1/search?apiKey=fjhq9hxy48h97smfcrbear8u&format=json&query=" + search)
-        println(searchURL)
+//        println(searchURL)
         let reposURL = NSURL(string: "http://api.walmartlabs.com/v1/paginated/items?category=3944&apiKey=fjhq9hxy48h97smfcrbear8u&format=json")
         
         if let JSONData = NSData(contentsOfURL: searchURL!)
@@ -86,7 +78,6 @@ class ViewController: UIViewController, UITableViewDataSource {
                     for item in prodArray
                     {
                         products.append(Products(json: item))
-                        println(products)
                     }
                 }
             }
@@ -100,6 +91,12 @@ class ViewController: UIViewController, UITableViewDataSource {
 //        return true
 //    }
 
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        println("clicked")
+        self.performSegueWithIdentifier("showWebView", sender: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
