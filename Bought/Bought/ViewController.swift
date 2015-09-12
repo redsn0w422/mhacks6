@@ -39,11 +39,8 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-    override func viewDidLoad() {
+    func viewDidAppear() {
         super.viewDidLoad()
-        queryData("iphone")
-        // Do any additional setup after loading the view, typically from a nib.
-//        queryData("ipod")
         
 //        searchBar.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
     }
@@ -60,7 +57,14 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func queryData(search: String) {
         
+       
+//        self.performSegueWithIdentifier("showWebView", sender: self)
+        
+//        let myHTMLString:String! = "<h1>Hello Pizza!</h1>"
+//        webView.loadHTMLString(myHTMLString, baseURL: nil)
+        
         println(search)
+        self.performSegueWithIdentifier("showWebView", sender: self)
         
         products = [Products]()
         
