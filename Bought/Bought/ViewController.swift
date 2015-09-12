@@ -16,7 +16,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = products[indexPath.row].name
-        cell.detailTextLabel?.text = products[indexPath.row].description
+//        cell.detailTextLabel?.text = products[indexPath.row].description
+//        cell.detailTextLabel?.text = "hey"
         
         if let url = NSURL(string: products[indexPath.row].img_url!)
         {
