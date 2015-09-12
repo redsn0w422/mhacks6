@@ -16,7 +16,7 @@ class WebViewController: UIViewController {
         var alert = UIAlertController(title: "Success!", message: "Product successfully added to watchlist", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
-//        performSegueWithIdentifier("", sender: <#AnyObject?#>)
+        performSegueWithIdentifier("showProductPage", sender: self)
     }
     
     override func viewDidAppear(animated: Bool) {

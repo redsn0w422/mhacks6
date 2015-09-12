@@ -21,6 +21,7 @@
 		EBDE92EF1BA4AAD500E577A2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE92EE1BA4AAD500E577A2 /* CFNetwork.framework */; };
 		EBDE92F11BA4AADA00E577A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE92F01BA4AADA00E577A2 /* Security.framework */; };
 		EBDE92F31BA4AAE200E577A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE92F21BA4AAE200E577A2 /* SystemConfiguration.framework */; };
+		EBDE92F51BA4B90800E577A2 /* ProductWatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE92F41BA4B90800E577A2 /* ProductWatchlistView.swift */; };
 		EBFAB7681BA41CC600DA7B86 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAB7671BA41CC600DA7B86 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		EBDE92EE1BA4AAD500E577A2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		EBDE92F01BA4AADA00E577A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EBDE92F21BA4AAE200E577A2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EBDE92F41BA4B90800E577A2 /* ProductWatchlistView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductWatchlistView.swift; sourceTree = "<group>"; };
 		EBFAB7671BA41CC600DA7B86 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				841F3E741BA3EE72008092C0 /* Repository.swift */,
 				841F3E761BA3F1FC008092C0 /* Products.swift */,
 				841F3E541BA3DD20008092C0 /* AppDelegate.swift */,
+				EBDE92F41BA4B90800E577A2 /* ProductWatchlistView.swift */,
 				841F3E581BA3DD20008092C0 /* Main.storyboard */,
 				841F3E5B1BA3DD20008092C0 /* Images.xcassets */,
 				841F3E5D1BA3DD20008092C0 /* LaunchScreen.xib */,
@@ -247,6 +250,7 @@
 			files = (
 				841F3E571BA3DD20008092C0 /* ViewController.swift in Sources */,
 				841F3E771BA3F1FC008092C0 /* Products.swift in Sources */,
+				EBDE92F51BA4B90800E577A2 /* ProductWatchlistView.swift in Sources */,
 				841F3E551BA3DD20008092C0 /* AppDelegate.swift in Sources */,
 				EBFAB7681BA41CC600DA7B86 /* WebViewController.swift in Sources */,
 				841F3E751BA3EE72008092C0 /* Repository.swift in Sources */,
