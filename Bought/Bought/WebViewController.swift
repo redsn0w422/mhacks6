@@ -36,15 +36,18 @@ class WebViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        self.webView?.loadRequest(NSURLRequest(URL: NSURL(string: self.url!)!))
+        /*
         httpGet(self.url!) {
             (data: String, error: String?) -> Void in
             if error != nil {
                 print(error)
             } else {
                 let myHTMLString: String! = data
-                self.webView.loadHTMLString(myHTMLString, baseURL: nil)
+                self.webView.loadHTMLString(myHTMLString, baseURL: "http://www.apple.com/")
             }
         }
+*/
         
     }
 }
