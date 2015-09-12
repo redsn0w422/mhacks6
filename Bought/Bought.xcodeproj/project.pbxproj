@@ -13,6 +13,7 @@
 		841F3E5C1BA3DD20008092C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F3E5B1BA3DD20008092C0 /* Images.xcassets */; };
 		841F3E5F1BA3DD20008092C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841F3E5D1BA3DD20008092C0 /* LaunchScreen.xib */; };
 		841F3E6B1BA3DD20008092C0 /* BoughtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F3E6A1BA3DD20008092C0 /* BoughtTests.swift */; };
+		841F3E751BA3EE72008092C0 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F3E741BA3EE72008092C0 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		841F3E641BA3DD20008092C0 /* BoughtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoughtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841F3E691BA3DD20008092C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841F3E6A1BA3DD20008092C0 /* BoughtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoughtTests.swift; sourceTree = "<group>"; };
+		841F3E741BA3EE72008092C0 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				841F3E541BA3DD20008092C0 /* AppDelegate.swift */,
 				841F3E561BA3DD20008092C0 /* ViewController.swift */,
+				841F3E741BA3EE72008092C0 /* Repository.swift */,
 				841F3E581BA3DD20008092C0 /* Main.storyboard */,
 				841F3E5B1BA3DD20008092C0 /* Images.xcassets */,
 				841F3E5D1BA3DD20008092C0 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				841F3E571BA3DD20008092C0 /* ViewController.swift in Sources */,
 				841F3E551BA3DD20008092C0 /* AppDelegate.swift in Sources */,
+				841F3E751BA3EE72008092C0 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
