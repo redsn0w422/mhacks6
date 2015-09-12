@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
+    @IBOutlet weak var searchBar: UITextField!
     var products = [Products]()
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -28,6 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var searchURL = NSURL(string: "http://api.walmartlabs.com/v1/search?apiKey=fjhq9hxy48h97smfcrbear8u&query=ipod")
         let reposURL = NSURL(string: "http://api.walmartlabs.com/v1/paginated/items?category=3944&apiKey=fjhq9hxy48h97smfcrbear8u&format=json")
         
         if let JSONData = NSData(contentsOfURL: reposURL!)
